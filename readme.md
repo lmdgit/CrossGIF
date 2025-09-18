@@ -7,23 +7,23 @@ This repository provides the benchmark datasets and the code will be made public
 
 **DBP-5L**:  A Public dataset from  https://github.com/stasl0217/KEnS.
 
-**DBP-FB5**: A new KG dataset. 
+**DBP-FB5**: A novel benchmark constructed for the multi-KG completion. 
 
-Here, we take DBP-FB5 as an example to illustrate the files and folders contained in each dataset. 
+Here, we illustrate the files and folders contained in each benchmark. 
 
-- entity: Folder with the list of entity for each KG.
-- kg: Folder with the list of KG triple for each KG.
-- seed_alignlinks: Folder with the list of seed entity alignment pair between two KGs. 
-- seed_alignlinks_available: Folder with the list of available seed entity alignment pair between two KGs. 
-- seed_alignlinks_unavailable: Folder with the list of unavailable seed entity alignment pair between two KGs. 
-- ent_name_emb.npy: The numpy file with mBERT embeddings for each entity across all KGs. 
-- relations.txt: File with the list of relation across all KGs.
+- entity: Folder with the list of entities for each individual KG.
+- kg: Folder with the list of KG triples for each individual KG.
+- seed_alignlinks: Folder with the list of seed entity alignment pairs between two individual KGs. 
+- seed_alignlinks_available: Folder with the list of available seed entity alignment pairs between two individual KGs. 
+- seed_alignlinks_unavailable: Folder with the list of unavailable seed entity alignment pairs between two individual KGs. 
+- ent_name_emb.npy: The textual embeddings outputed by BERT for each entity in the benchmark. 
+- relations.txt: File with the list of relations in the benchnark.
 
 
 
 ## Dataset Statistics
 
-We provide the statistics of the benchmark datasets used in the experiments.
+We provide the statistics of the benchmark datasets.
 
 | Dataset  | KGs | Entities | Relations | Triples | Alignment links |
 |----------|-----|----------|-----------|---------|-----------------|
