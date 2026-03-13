@@ -1,4 +1,4 @@
-# CrossGIF: A cross-graph information fusion method for multiple knowledge graphs completion
+# Towards Multiple Knowledge Graphs Completion: A Cross-graph Information Fusion Method
 
 ## Overview
 This repository provides the benchmark datasets and the code will be made publicly available as soon as the work is published.
