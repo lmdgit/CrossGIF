@@ -40,67 +40,19 @@ We provide the statistics of the benchmark datasets.
 
 ## Baseline Configurations
 
-We report the main hyperparameter configurations of all baselines evaluated on the \textbf{DBP-FB5} dataset. The detailed settings are as follows.
+We report the main hyperparameter configurations of all baselines evaluated on the **DBP-FB5** dataset. The detailed settings are as follows.
 
-\begin{table*}[t]
-\centering
-\caption{Main hyperparameter configurations of baselines on the DBP-FB5 dataset.}
-\label{tab:baseline_configurations}
-\resizebox{\textwidth}{!}{
-\begin{tabular}{l|l}
-\hline
-\textbf{Method} & \textbf{Main Hyperparameters} \\
-\hline
-TransE &
-\texttt{batch\_size}=1024, \texttt{hidden\_dim}=256, \texttt{learning\_rate}=1e-4, 
-\texttt{max\_steps}=150000, \texttt{test\_batch\_size}=16, \texttt{gamma}=24.0 \\
-\hline
-RotatE &
-\texttt{batch\_size}=1024, \texttt{hidden\_dim}=256, \texttt{learning\_rate}=1e-4, 
-\texttt{max\_steps}=150000, \texttt{test\_batch\_size}=16, \texttt{gamma}=24.0 \\
-\hline
-KG-BERT &
-\texttt{max\_seq\_length}=50, \texttt{train\_batch\_size}=32, 
-\texttt{learning\_rate}=5e-5, \texttt{num\_train\_epochs}=5.0, 
-\texttt{eval\_batch\_size}=5000 \\
-\hline
-CrossLink &
-\texttt{emb\_dimension}=256, \texttt{batch\_size}=256, \texttt{epoch}=200, 
-\texttt{learning\_rate}=5e-5, \texttt{margin}=9.0 \\
-\hline
-SS-AGA &
-\texttt{transe\_margin}=0.3, \texttt{align\_margin}=6, \texttt{dim}=256, 
-\texttt{learning\_rate}=5e-3, \texttt{align\_lr}=1e-3, 
-\texttt{batch\_size}=200, \texttt{round}=25, 
-\texttt{n\_layers\_KG}=2, \texttt{n\_layers\_align}=2 \\
-\hline
-LSMGA &
-\texttt{margin}=0.3, \texttt{dim}=256, \texttt{round}=50, 
-\texttt{batch\_size}=200, \texttt{learning\_rate}=5e-3, 
-\texttt{test\_batch\_size}=200, \texttt{n\_layers\_gnn}=2, 
-\texttt{epoch\_each}=3, \texttt{n\_heads}=1 \\
-\hline
-AlignKGC &
-\texttt{learning\_rate}=0.8, \texttt{batch\_size}=500, 
-\texttt{max\_epochs}=70, \texttt{embedding\_dim}=256, 
-\texttt{ealoss\_coeff}=50.0, \texttt{regloss\_coeff}=0.02 \\
-\hline
-JMAC &
-\texttt{margin\_completion}=5, \texttt{margin\_align}=1, \texttt{dim}=256, 
-\texttt{epoch}=30, \texttt{batch\_size}=1000, 
-\texttt{align\_lr}=3e-4, \texttt{completion\_lr}=3e-4, 
-\texttt{num\_gcn\_layer}=2, \texttt{comp\_op}=\texttt{sub}, 
-\texttt{pair\_sample\_weight}=0.2 \\
-\hline
-CLP &
-\texttt{batch\_size}=2048, \texttt{test\_batch\_size}=100, 
-\texttt{learning\_rate}=5e-4, \texttt{emb\_dim}=256, 
-\texttt{margin}=9.0, \texttt{topk}=3, \texttt{lambda\_1}=0.7, 
-\texttt{lambda\_2}=0.3, \texttt{alpha}=1.0, \texttt{warmup}=10 \\
-\hline
-\end{tabular}
-}
-\end{table*}
+| Method | Main Hyperparameters |
+|--------|----------------------|
+| **TransE** | `batch_size=1024`, `hidden_dim=256`, `learning_rate=1e-4`, `max_steps=150000`, `test_batch_size=16`, `gamma=24.0` |
+| **RotatE** | `batch_size=1024`, `hidden_dim=256`, `learning_rate=1e-4`, `max_steps=150000`, `test_batch_size=16`, `gamma=24.0` |
+| **KG-BERT** | `max_seq_length=50`, `train_batch_size=32`, `learning_rate=5e-5`, `num_train_epochs=5.0`, `eval_batch_size=5000` |
+| **CrossLink** | `emb_dimension=256`, `batch_size=256`, `epoch=200`, `learning_rate=5e-5`, `margin=9.0` |
+| **SS-AGA** | `transe_margin=0.3`, `align_margin=6`, `dim=256`, `learning_rate=5e-3`, `align_lr=1e-3`, `batch_size=200`, `round=25`, `n_layers_KG=2`, `n_layers_align=2` |
+| **LSMGA** | `margin=0.3`, `dim=256`, `round=50`, `batch_size=200`, `learning_rate=5e-3`, `test_batch_size=200`, `n_layers_gnn=2`, `epoch_each=3`, `n_heads=1` |
+| **AlignKGC** | `learning_rate=0.8`, `batch_size=500`, `max_epochs=70`, `embedding_dim=256`, `ealoss_coeff=50.0`, `regloss_coeff=0.02` |
+| **JMAC** | `margin_completion=5`, `margin_align=1`, `dim=256`, `epoch=30`, `batch_size=1000`, `align_lr=3e-4`, `completion_lr=3e-4`, `num_gcn_layer=2`, `comp_op=sub`, `pair_sample_weight=0.2` |
+| **CLP** | `batch_size=2048`, `test_batch_size=100`, `learning_rate=5e-4`, `emb_dim=256`, `margin=9.0`, `topk=3`, `lambda_1=0.7`, `lambda_2=0.3`, `alpha=1.0`, `warmup=10` |
 
 
 
