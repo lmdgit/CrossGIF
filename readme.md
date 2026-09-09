@@ -55,4 +55,16 @@ We report the main hyperparameter configurations of all baselines evaluated on t
 | **JMAC** | `margin_completion=5`, `margin_align=1`, `dim=256`, `epoch=30`, `batch_size=1000`, `align_lr=3e-4`, `completion_lr=3e-4`, `num_gcn_layer=2`, `comp_op=sub`, `pair_sample_weight=0.2` |
 | **CLP** | `batch_size=2048`, `test_batch_size=100`, `learning_rate=5e-4`, `emb_dim=256`, `margin=9.0`, `topk=3`, `lambda_1=0.7`, `lambda_2=0.3`, `alpha=1.0`, `warmup=10` |
 
+| Method | Hyperparameter Search Space |
+|--------|-----------------------------|
+| **TransE** | `batch_size∈{512, 1024, 2048}`, `hidden_dim∈{128, 256, 512}`, `learning_rate∈{5e-5, 1e-4, 5e-4}`, `max_steps∈{100000, 150000, 200000}`, `gamma∈{18.0, 24.0, 30.0}` |
+| **RotatE** | `batch_size∈{512, 1024, 2048}`, `hidden_dim∈{128, 256, 512}`, `learning_rate∈{5e-5, 1e-4, 5e-4}`, `max_steps∈{100000, 150000, 200000}`, `gamma∈{18.0, 24.0, 30.0}` |
+| **KG-BERT** | `max_seq_length∈{32, 50, 64}`, `train_batch_size∈{16, 32, 64}`, `learning_rate∈{1e-5, 5e-5, 1e-4}`, `num_train_epochs∈{3.0, 5.0, 7.0}` |
+| **CrossLink** | `emb_dimension∈{128, 256, 512}`, `batch_size∈{128, 256, 512}`, `epoch∈{100, 200, 300}`, `learning_rate∈{1e-5, 5e-5, 1e-4}`, `margin∈{3.0, 6.0, 9.0}` |
+| **SS-AGA** | `transe_margin∈{0.1, 0.3, 0.5}`, `align_margin∈{3.0, 6.0, 9.0}`, `dim∈{128, 256, 512}`, `learning_rate∈{1e-3, 5e-3, 1e-2}`, `align_lr∈{5e-4, 1e-3, 2e-3}`, `batch_size∈{256, 512, 1024}`, `round∈{15, 25, 35}`, `n_layers_KG∈{1, 2, 3}`, `n_layers_align∈{1, 2, 3}` |
+| **LSMGA** | `margin∈{0.2, 0.3, 0.5}`, `dim∈{128, 256, 512}`, `round∈{25, 50, 75}`, `batch_size∈{150, 200, 250}`, `learning_rate∈{1e-4, 5e-4, 1e-3}`, `n_layers_gnn∈{1, 2, 3}`, `epoch_each∈{1, 3, 5}`, `n_heads∈{1, 2, 4}` |
+| **GCPLM** | `batch_size∈{64, 128, 256}`, `lr∈{3e-5, 4e-5, 5e-5}`, `epoch∈{5, 8, 10}`, `max_len∈{32, 35, 40}`, `alpha∈{0.0005, 0.001, 0.005}`, `beta∈{0.0005, 0.001, 0.005}`, `gama∈{5.0, 10.0, 20.0}`, `early_stop∈{5, 10, 15}`, `valid_per_step∈{500, 1000, 2000}` |
+| **AlignKGC** | `learning_rate∈{0.4, 0.8, 1.2}`, `batch_size∈{250, 500, 1000}`, `max_epochs∈{50, 70, 100}`, `embedding_dim∈{128, 256, 512}`, `ealoss_coeff∈{10.0, 50.0, 100.0}`, `regloss_coeff∈{0.01, 0.02, 0.05}` |
+| **JMAC** | `margin_completion∈{0, 5, 10}`, `margin_align∈{0, 5, 10}`, `dim∈{128, 256, 512}`, `epoch∈{20, 25, 30}`, `batch_size∈{500, 1000, 2000}`, `align_lr∈{1e-4, 5e-4, 1e-3}`, `completion_lr∈{1e-4, 5e-4, 1e-3}`, `num_gcn_layer∈{1, 2, 3}`, `comp_op=sub`, `pair_sample_weight∈{0.1, 0.2, 0.3}` |
+| **CLP** | `batch_size∈{512, 1024, 2048}`, `learning_rate∈{1e-4, 5e-4, 1e-3}`, `emb_dim∈{128, 256, 512}`, `margin∈{9.0, 12.0}`, `topk∈{1, 3, 5, 10}`, `lambda_1∈{0.7, 0.8, 0.9}`, `lambda_2∈{0.2, 0.3, 0.4}`, `alpha∈{0.01, 0.1, 1.0}`, `warmup∈{8, 10, 12}` |
 
