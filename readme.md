@@ -38,22 +38,23 @@ We provide the statistics of the benchmark datasets.
 |          | D1 | 11,858 | 243 | 44,011  | 8,831  |
 |          | D2 | 11,879 | 240 | 44,011  | 8,867  |
 
+
 ## Baseline Configurations
 
 We report the main hyperparameter configurations of all baselines evaluated on the **DBP-FB5** dataset. The detailed settings are as follows.
 
 | Method | Main Hyperparameters |
 |--------|----------------------|
-| **TransE** | `batch_size=1024`, `hidden_dim=256`, `learning_rate=1e-4`, `max_steps=150000`, `test_batch_size=16`, `gamma=24.0` |
-| **RotatE** | `batch_size=1024`, `hidden_dim=256`, `learning_rate=1e-4`, `max_steps=150000`, `test_batch_size=16`, `gamma=24.0` |
-| **KG-BERT** | `max_seq_length=50`, `train_batch_size=32`, `learning_rate=5e-5`, `num_train_epochs=5.0`, `eval_batch_size=5000` |
-| **CrossLink** | `emb_dimension=256`, `batch_size=256`, `epoch=200`, `learning_rate=5e-5`, `margin=9.0` |
-| **SS-AGA** | `transe_margin=0.3`, `align_margin=6`, `dim=256`, `learning_rate=5e-3`, `align_lr=1e-3`, `batch_size=200`, `round=25`, `n_layers_KG=2`, `n_layers_align=2` |
-| **LSMGA** | `margin=0.3`, `dim=256`, `round=50`, `batch_size=200`, `learning_rate=5e-3`, `test_batch_size=200`, `n_layers_gnn=2`, `epoch_each=3`, `n_heads=1` |
-| **GCPLM** | `batch_size=128`, `lr=4e-5`, `epoch=8`, `max_len=35`, `alpha=0.001`, `beta=0.005`, `gama=10.0`, `early_stop=10`, `valid_per_step=1000` |
-| **AlignKGC** | `learning_rate=0.8`, `batch_size=500`, `max_epochs=70`, `embedding_dim=256`, `ealoss_coeff=50.0`, `regloss_coeff=0.02` |
-| **JMAC** | `margin_completion=5`, `margin_align=1`, `dim=256`, `epoch=30`, `batch_size=1000`, `align_lr=3e-4`, `completion_lr=3e-4`, `num_gcn_layer=2`, `comp_op=sub`, `pair_sample_weight=0.2` |
-| **CLP** | `batch_size=2048`, `test_batch_size=100`, `learning_rate=5e-4`, `emb_dim=256`, `margin=9.0`, `topk=3`, `lambda_1=0.7`, `lambda_2=0.3`, `alpha=1.0`, `warmup=10` |
+| **[TransE](https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding)** | `batch_size=1024`, `hidden_dim=256`, `learning_rate=1e-4`, `max_steps=150000`, `test_batch_size=16`, `gamma=24.0` |
+| **[RotatE](https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding)** | `batch_size=1024`, `hidden_dim=256`, `learning_rate=1e-4`, `max_steps=150000`, `test_batch_size=16`, `gamma=24.0` |
+| **[KG-BERT](https://github.com/yao8839836/kg-bert)** | `max_seq_length=50`, `train_batch_size=32`, `learning_rate=5e-5`, `num_train_epochs=5.0`, `eval_batch_size=5000` |
+| **[CrossLink](https://github.com/Fifty-yuan/Cross-KG-Link)** | `emb_dimension=256`, `batch_size=256`, `epoch=200`, `learning_rate=5e-5`, `margin=9.0` |
+| **[SS-AGA](https://github.com/amzn/ss-aga-kgc)** | `transe_margin=0.3`, `align_margin=6`, `dim=256`, `learning_rate=5e-3`, `align_lr=1e-3`, `batch_size=200`, `round=25`, `n_layers_KG=2`, `n_layers_align=2` |
+| **[LSMGA](https://github.com/RongchuanTang/LSMGA-MKGC)** | `margin=0.3`, `dim=256`, `round=50`, `batch_size=200`, `learning_rate=5e-3`, `test_batch_size=200`, `n_layers_gnn=2`, `epoch_each=3`, `n_heads=1` |
+| **[GCPLM](https://github.com/Maxpa1n/gcplm-kgc)** | `batch_size=128`, `lr=4e-5`, `epoch=8`, `max_len=35`, `alpha=0.001`, `beta=0.005`, `gama=10.0`, `early_stop=10`, `valid_per_step=1000` |
+| **[AlignKGC](https://www.cse.iitb.ac.in/~soumen/doc/AlignKGC/)** | `learning_rate=0.8`, `batch_size=500`, `max_epochs=70`, `embedding_dim=256`, `ealoss_coeff=50.0`, `regloss_coeff=0.02` |
+| **[JMAC](https://github.com/vinhsuhi/JMAC)** | `margin_completion=5`, `margin_align=1`, `dim=256`, `epoch=30`, `batch_size=1000`, `align_lr=3e-4`, `completion_lr=3e-4`, `num_gcn_layer=2`, `comp_op=sub`, `pair_sample_weight=0.2` |
+| **[CLP](https://github.com/nju-websoft/CLP)** | `batch_size=2048`, `test_batch_size=100`, `learning_rate=5e-4`, `emb_dim=256`, `margin=9.0`, `topk=3`, `lambda_1=0.7`, `lambda_2=0.3`, `alpha=1.0`, `warmup=10` |
 
 | Method | Hyperparameter Search Space |
 |--------|-----------------------------|
